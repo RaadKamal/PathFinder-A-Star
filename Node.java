@@ -17,6 +17,7 @@ public class Node extends JButton implements ActionListener {
     boolean goal;
     boolean open;
     boolean checked;
+    boolean solid;
     
     
     public Node(int row, int col) {
@@ -39,6 +40,12 @@ public class Node extends JButton implements ActionListener {
         setBackground(Color.blue);
         setForeground(Color.black);
         setText("Goal");
+    }
+
+    public void setAsSolid() {
+        setBackground(Color.gray);
+        setForeground(Color.white);
+        setText("Solid");
     }
 
     public void actionPerformed(ActionEvent e) {
