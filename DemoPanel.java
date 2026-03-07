@@ -56,4 +56,19 @@ public class DemoPanel extends JPanel {
     private void setSolidNode(int row, int col) {
         grid[row][col].setAsSolid();
     }
+
+    private void getCost(Node node) {
+
+        int xDistance = Math.abs(node.col - startNode.col);
+        int yDistance = Math.abs(node.row - startNode.row);
+        int hCost = xDistance + yDistance;
+
+        xDistance = Math.abs(node.col - goalNode.col);
+        yDistance = Math.abs(node.row - goalNode.row);
+        hCost = xDistance + yDistance;
+
+        node.fCost = node.gCost + hCost;
+
+        //20:00 time
+    }
 }
