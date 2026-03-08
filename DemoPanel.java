@@ -61,13 +61,13 @@ public class DemoPanel extends JPanel {
 
         int xDistance = Math.abs(node.col - startNode.col);
         int yDistance = Math.abs(node.row - startNode.row);
-        int hCost = xDistance + yDistance;
+        node.gCost = xDistance + yDistance;
 
         xDistance = Math.abs(node.col - goalNode.col);
         yDistance = Math.abs(node.row - goalNode.row);
-        hCost = xDistance + yDistance;
+        node.hCost = xDistance + yDistance;
 
-        node.fCost = node.gCost + hCost;
+        node.fCost = node.gCost + node.hCost;
 
         //20:00 time
     }
