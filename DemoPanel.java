@@ -41,6 +41,9 @@ public class DemoPanel extends JPanel {
         setSolidNode(5, 6);
         setSolidNode(5, 7); 
         setSolidNode(3, 3);
+
+
+        setCostonNodes();
     }
     private void setStartNode(int row, int col) {
         startNode = grid[row][col];
@@ -56,7 +59,21 @@ public class DemoPanel extends JPanel {
     private void setSolidNode(int row, int col) {
         grid[row][col].setAsSolid();
     }
+    private void setCostonNodes() {
+        int col = 0;
+        int row = 0;
 
+        while(col < maxCol && row < maxRow) {
+            Node node = grid[row][col];
+            getCost(node);
+            col++;
+            if(col == maxCol) {
+                col = 0;
+                row++;
+            }
+        }
+    }
+    
     private void getCost(Node node) {
 
         int xDistance = Math.abs(node.col - startNode.col);
@@ -69,6 +86,8 @@ public class DemoPanel extends JPanel {
 
         node.fCost = node.gCost + node.hCost;
 
-        //20:00 time
+        if(node!= startNode && node != goalNode) {
+            node.setText("<html>F:" + node.fCost + "<br>G:" + node.gCost + "</html>");
+        }
     }
 }
