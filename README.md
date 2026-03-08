@@ -11,8 +11,8 @@ g(n) represents the exact cost of the path from the starting point to any vertex
 
 Primary Real-World Applications:
 
-Video games: A* is the engine running behind a unit moving around in a jungle filled with trees and evading enemies, or an enemy character chasing the player through a complex building.
+                            Video games: A* is the engine running behind a unit moving around in a jungle filled with trees and evading enemies, or an enemy character chasing the player through a complex building.
 
-GPS and Navigation: While massive apps like Google Maps use complex, highly optimised variations of these algorithms to handle the entire globe, the core concepts of A* are used to find the fastest route between two locations while factoring in avoiding roadblocks.
+                            GPS and Navigation: While massive apps like Google Maps use complex, highly optimised variations of these algorithms to handle the entire globe, the core concepts of A* are used to find the fastest route between two locations while factoring in avoiding roadblocks.
 
-Robotics: Autonomous machines ( like automated warehouse robots or robotic vacuums ) use A* to plot a physical path across a factory floor or a living room without crashing into walls or unexpected obstacles.
+                            Robotics: Autonomous machines ( like automated warehouse robots or robotic vacuums ) use A* to plot a physical path across a factory floor or a living room without crashing into walls or unexpected obstacles.
