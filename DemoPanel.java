@@ -108,12 +108,28 @@ public class DemoPanel extends JPanel {
         checkedList.add(currentNode);
         openList.remove(currentNode);
         
-        //OPEN THE NODES AROUND THE CURRENT NODE
-        openNode(node[col][row-1]);
-        openNode(node[col][row+1]);
-        openNode(node[col-1][row]);
-        openNode(node[col+1][row]);    
+            //OPEN THE NODES AROUND THE CURRENT NODE
+            if(row-1>=0){
+                openNode(node[col][row-1]);
+            }
+            if(row+1<maxRow) {
+                openNode(node[col][row+1]);
+            }
+            if(col-1>=0) {
+                openNode(node[col-1][row]);
+            }
+            if(col+1<maxCol) {
+                openNode(node[col+1][row]);    
+            }
+            int bestNodeIndex = 0;
+            int bestNodefCost = Integer.MAX_VALUE;
 
+            for(int i = 0; i < openList.size(); i++) {
+                if(openList.get(i).fCost < bestNodefCost) {
+                    bestNodeIndex = i;
+                    bestNodefCost = openList.get(i).fCost;
+                }
+            }
         }
     
     }
