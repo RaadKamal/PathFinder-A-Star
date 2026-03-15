@@ -12,7 +12,7 @@ $g(n)$ (The known past): This acts like Dijkstra's Algorithm. It keeps the algor
 
 $h(n)$ (The estimated future): This acts like Greedy Best-First Search. It provides a "best guess" that actively pulls the search direction toward the goal, rather than just expanding blindly in a circle.
 
-what is $f(n)?$ The best Breadth First Search!
+what is $f(n)?$ The best B+D First Search !
 
 ## Primary Real-World Applications:
 
