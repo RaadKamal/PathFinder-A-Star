@@ -28,7 +28,9 @@ public class DemoPanel extends JPanel {
         this.setPreferredSize(new Dimension(screenWidth,screenHeight));
         this.setBackground(Color.black);
         this.setLayout(new GridLayout(maxRow,maxCol));
-        
+        this.addKeyListener(new KeyHandler(this));
+        this.setFocusable(true);
+
         for (int row = 0; row < maxRow; row++) {
             for (int col = 0; col < maxCol; col++) {
                 node[row][col] = new Node(row, col);
@@ -97,7 +99,7 @@ public class DemoPanel extends JPanel {
         }
     }
 
-    private void search(){
+    public void search(){
         
       
      if(goalreached == false) {  

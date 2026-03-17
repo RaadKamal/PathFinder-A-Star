@@ -3,22 +3,29 @@ import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {
 
+    DemoPanel dp;
+
+    public KeyHandler(DemoPanel dp) {
+        this.dp = dp;
+        
+    }
     @Override
     public void keyTyped(KeyEvent e) {
-  
-        throw new UnsupportedOperationException("Unimplemented method 'keyTyped'");
+
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
 
-        throw new UnsupportedOperationException("Unimplemented method 'keyPressed'");
+        int code = e.getExtendedKeyCode();
+
+        if(code == KeyEvent.VK_ENTER) {
+           dp.search();
+        }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-
-        throw new UnsupportedOperationException("Unimplemented method 'keyReleased'");
     }
 
 

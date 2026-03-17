@@ -46,6 +46,7 @@ public class Node extends JButton implements ActionListener {
         setBackground(Color.gray);
         setForeground(Color.white);
         setText("Solid");
+        solid = true; 
     }
 
     public void setAsOpen() {
