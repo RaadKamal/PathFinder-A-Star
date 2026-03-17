@@ -24,3 +24,4 @@ what is $f(n)?$ The best B+D First Search !
 
 
 That's what A* capability. NextGen starts from here:-
+The rest of the algorithm is being developed in a private mode.
