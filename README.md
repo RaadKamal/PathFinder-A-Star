@@ -8,7 +8,11 @@ __If h(n) is exactly equal to the cost of moving from n to the goal, then A* wil
 
 ### Primary Real-World Applications:
 
-* Video games, GPS and Navigation, Robotics.
+* Video games: A* is the engine running behind a unit moving around in a jungle filled with trees and evading enemies, or an enemy character chasing the player through a complex building.
+
+* GPS and Navigation: While massive apps like Google Maps use complex, highly optimised variations of these algorithms to handle the entire globe, the core concepts of A* are used to find the fastest route between two locations while factoring in avoiding roadblocks.
+
+* Robotics: Autonomous machines ( like automated warehouse robots or robotic vacuums ) use A* to plot a physical path across a factory floor or a living room without crashing into walls or unexpected obstacles.
 
 
 That's what A* capability. NextGen starts from here:- The rest of the algorithm is being developed in private mode.
