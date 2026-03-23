@@ -26,7 +26,7 @@ public class DemoPanel extends JPanel {
 
     public DemoPanel() {
         this.setPreferredSize(new Dimension(screenWidth,screenHeight));
-        this.setBackground(Color.black);
+        this.setBackground(Color.black);  //This acts as the "background" color that will show through if there are any gaps between your nodes.
         this.setLayout(new GridLayout(maxRow,maxCol));
         this.addKeyListener(new KeyHandler(this));
         this.setFocusable(true);
@@ -42,7 +42,7 @@ public class DemoPanel extends JPanel {
     
 
         setStartNode(2, 3);
-        setGoalNode(maxRow-1, maxCol-1);
+        setGoalNode(6, 12);
         setSolidNode(4, 5);
         setSolidNode(4, 6);
         setSolidNode(4, 7);
@@ -108,7 +108,7 @@ public class DemoPanel extends JPanel {
         int row = currentNode.row;
 
 
-        currentNode.setAsChecked();
+        currentNode.setAsChecked(); //I have stood on this square, I have looked at all of its neighbors, and I have calculated their scores. I am completely done with this square.
         checkedList.add(currentNode);
         openList.remove(currentNode);
         
@@ -125,6 +125,7 @@ public class DemoPanel extends JPanel {
             if(col+1<maxCol) {
                 openNode(node[row][col+1]);    
             }
+
             int bestNodeIndex = 0;
             int bestNodefCost = Integer.MAX_VALUE;
             
@@ -157,9 +158,8 @@ public class DemoPanel extends JPanel {
         if(node.open == false && node.checked == false && node.solid == false) {
             //if the node is not opened yet, add it to the open list
             node.setAsOpen();
-            node.parent=currentNode;
+            node.parent=currentNode;//The node.parent = currentNode; line is the most important part of the entire algorithm because it creates a breadcrumb trail (or a "pointer") back to the start.
             openList.add(node);
-            
         }
     }
 
