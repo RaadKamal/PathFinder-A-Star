@@ -9,7 +9,7 @@ __If h(n) is exactly equal to the cost of moving from n to the goal, then A* wil
 That's what A* capability. NextGen starts from here:- The rest of the algorithm is being developed in private mode.
 
 
-### Primary Real-World Applications:
+### Primary Real-World Applications of A*:
 
 * Video games: A* is the engine running behind a unit moving around in a jungle filled with trees and evading enemies, or an enemy character chasing the player through a complex building.
 
