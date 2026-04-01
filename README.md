@@ -6,6 +6,9 @@ f(n) = g(n) + h(n).
 
 __If h(n) is exactly equal to the cost of moving from n to the goal, then A* will only follow the best path and never expand anything else, making it very fast. Although you can’t make this happen in all cases, you can make it exact in some special cases. It’s nice to know that given perfect information, A* will behave perfectly__
 
+That's what A* capability. NextGen starts from here:- The rest of the algorithm is being developed in private mode.
+
+
 ### Primary Real-World Applications:
 
 * Video games: A* is the engine running behind a unit moving around in a jungle filled with trees and evading enemies, or an enemy character chasing the player through a complex building.
@@ -15,4 +18,3 @@ __If h(n) is exactly equal to the cost of moving from n to the goal, then A* wil
 * Robotics: Autonomous machines ( like automated warehouse robots or robotic vacuums ) use A* to plot a physical path across a factory floor or a living room without crashing into walls or unexpected obstacles.
 
 
-That's what A* capability. NextGen starts from here:- The rest of the algorithm is being developed in private mode.
