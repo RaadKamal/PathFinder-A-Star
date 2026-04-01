@@ -17,11 +17,17 @@ That's what A* capability. NextGen starts from here:- The rest of the algorithm 
 
 * Robotics: Autonomous machines ( like automated warehouse robots or robotic vacuums ) use A* to plot a physical path across a factory floor or a living room without crashing into walls or unexpected obstacles.
 
-A* Pic:
-![PictureA](https://github.com/user-attachments/assets/2bcb2541-3d9b-428f-8600-35b860db2844)
+<p align="center">
+  <b>A* Pic:</b><br>
+  <img src="https://github.com/user-attachments/assets/2bcb2541-3d9b-428f-8600-35b860db2844" width="300" alt="PictureA">
+</p>
 
-NextGen Pic (Seacrhing):
-![Searcher](https://github.com/user-attachments/assets/1fba415a-085d-49f5-8257-9a4efe87695d)
+<p align="center">
+  <b>NextGen Pic (Searching):</b><br>
+  <img src="https://github.com/user-attachments/assets/1fba415a-085d-49f5-8257-9a4efe87695d" width="300" alt="Searcher">
+</p>
 
-NextGen Pic (PathFound):
-![Found](https://github.com/user-attachments/assets/717c62a5-9af7-4169-9ac0-7715dfc40063)
+<p align="center">
+  <b>NextGen Pic (PathFound):</b><br>
+  <img src="https://github.com/user-attachments/assets/717c62a5-9af7-4169-9ac0-7715dfc40063" width="300" alt="Found">
+</p>
